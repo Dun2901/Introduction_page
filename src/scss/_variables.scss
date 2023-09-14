@@ -1,0 +1,42 @@
+$headerHeight: 3rem;
+
+/*========== Colors ==========*/
+$hue: 0;
+$sat: 0%;
+$titleColor: hsl($hue, $sat, 20%);
+$titleColorDark: hsl($hue, $sat, 0%);
+$textColor: hsl($hue, $sat, 46%);
+$bodyColor: hsl($hue, $sat, 98%);
+$containerColor: #fff;
+
+/*========== Font and typography ==========*/
+$bodyFont: "Poppins", sans-serif;
+
+// .5rem = 8px | 1rem = 16px ...
+$bigFontSize: 3.5rem;
+$h1FontSize: 2.25rem;
+$h2FontSize: 1.5rem;
+$h3FontSize: 1.25rem;
+$normalFontSize: 1rem;
+$smallFontSize: 0.875rem;
+$smallerFontSize: 0.813rem;
+$tinyFontSize: 0.625rem;
+
+/*========== Font weight ==========*/
+$fontNormal: 400;
+$fontMedium: 500;
+$fontSemiBold: 600;
+
+/*========== Margenes Bottom ==========*/
+$mb-0-25: 0.25rem;
+$mb-0-5: 0.5rem;
+$mb-1: 1rem;
+$mb-1-5: 1.5rem;
+$mb-2: 2rem;
+$mb-2-5: 2.5rem;
+$mb-3: 3rem;
+
+/*========== z index ==========*/
+$zToolTip: 10;
+$fixed: 100;
+$zModal: 1000;

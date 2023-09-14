@@ -1,0 +1,135 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+@import "./scss/_variables.scss";
+
+/*=============== BASE ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: $bodyFont;
+  font-size: $normalFontSize;
+}
+
+body {
+  background-color: $bodyColor;
+  color: $textColor;
+}
+
+h1,
+h2,
+h3 {
+  color: $titleColor;
+  font-weight: $fontSemiBold;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section {
+  padding: 6rem 0 2rem;
+}
+
+.section_title {
+  font-size: $h1FontSize;
+  color: $titleColor;
+}
+
+.section_subtitle {
+  display: block;
+  font-size: $smallFontSize;
+  margin-bottom: 4rem;
+}
+
+.section_subtitle,
+.section_title {
+  text-align: center;
+}
+
+/*=============== LAYOUT ===============*/
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*=============== BUTTONS ===============*/
+.button {
+  display: inline-block;
+  background-color: $titleColor;
+  color: $containerColor;
+  padding: 1.25rem 2rem;
+  border-radius: 1rem;
+  font-weight: $fontMedium;
+
+  &:hover {
+    background-color: $titleColorDark;
+  }
+}
+
+.button_icon {
+  margin-left: $mb-0-5;
+}
+
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+}
+
+/*=============== BREAKPOINTS ===============*/
+// For large devices
+@media screen and (max-width: 992px) {
+  .container {
+    margin-left: $mb-1-5;
+    margin-right: $mb-1-5;
+  }
+}
+
+// For medium devices
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+//For small devices
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: $mb-1;
+    margin-right: $mb-1;
+  }
+}
